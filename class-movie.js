@@ -5,7 +5,7 @@
  //and a String representing the rating as its arguments,
  //and sets the respective class properties to these values.
 
- class Tamilmovie{
+ class kollywoodmovie{
     constructor(title,studio,rating){
     this.title=title;
     this.studio=studio;
@@ -21,18 +21,18 @@
         console.log(`The rating of the movie "${this.title}" is - "${this.rating}"`);
     }
 }
-let movie1 = new Tamilmovie("Love Today"," AGS Entertainment","PG13");
+let movie1 = new kollywoodmovie("leo","Seven Screen Studio","PG13");
 movie1.Title();
 movie1.Studio();
 movie1.Rating();
 // OUTPUT
-// The title of the movie is "Love Today"
-// The studio that made this movie "Love Today" is " AGS Entertainment"
-// The rating of the movie "Love Today" is - "PG13"
+// The title of the movie is "Leo"
+// The studio that made this movie "Leo" is "Seven Screen Studio "
+// The rating of the movie "Leo" is - "PG13"
 
 //b) The constructor for the class Movie will set 
 //the class property rating to "PG" as default when no rating is provided.
-class kannadamovie{
+class Tamilmovie{
     constructor(title,studio,rating='PG'){
     this.title=title;
     this.studio=studio;
@@ -48,14 +48,14 @@ class kannadamovie{
         console.log(`The rating of the movie "${this.title}" is - "${this.rating}"`);
     }
 }
-let movie2 = new kannadamovie("KGF","Hombale Films");
+let movie2 = new tamilmovie("Jailer","Aashirvad Cinemas");
 movie2.Title();
 movie2.Studio();
 movie2.Rating();
 // OUTPUT
-// The title of the movie is "KGF"
-// The studio that made this movie "KGF" is "Hombale Films"
-// The rating of the movie "KGF" is - "PG"
+// The title of the movie is "Jailer"
+// The studio that made this movie "Jailer" is "Aashirvad Cinemas"
+// The rating of the movie "Jailer" is - "PG"
     
 //c) Write a method getPG, which takes an array of base type
 // Movie as its argument, and returns a new array of only those movies in the input array with a rating of "PG".
@@ -103,8 +103,8 @@ movie3.getPG();
     this.rating=rating;
     }
     }
-var movie4=new Hollywoodmovie('Casino Royale','Eon Productions','PG13');
-console.log(movie4)
+var movie=new Hollywoodmovie('Casino Royale','Eon Productions','PG13');
+console.log(movie)
 //OUTPUT
 // Hollywoodmovie {title: 'Casino Royale', studio: 'Eon Productions', rating: 'PG13'}
 // rating : "PG13"
